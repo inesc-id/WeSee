@@ -6,7 +6,7 @@
     <groupId>example</groupId>
     <artifactId>hello-ws-cli_handlers</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java-soap-interception/hello-ws-cli_handlers/hello-ws-cli_handlers.iml" filepath="$PROJECT_DIR$/java-soap-interception/hello-ws-cli_handlers/hello-ws-cli_handlers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-soap-interception/hello-ws_handlers/hello-ws_handlers.iml" filepath="$PROJECT_DIR$/java-soap-interception/hello-ws_handlers/hello-ws_handlers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-soap-interception/webServer/webServer.iml" filepath="$PROJECT_DIR$/java-soap-interception/webServer/webServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-soap-interception/ws-handlers/ws-handlers.iml" filepath="$PROJECT_DIR$/java-soap-interception/ws-handlers/ws-handlers.iml" />
+    </modules>
+  </component>
+</project>
