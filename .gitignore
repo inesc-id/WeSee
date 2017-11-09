@@ -57,4 +57,4 @@ build/
 
 # Maven
 webServer/target/
-mylogfile.log 
+mylogfile.log
