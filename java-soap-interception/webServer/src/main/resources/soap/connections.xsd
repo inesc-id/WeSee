@@ -1,0 +1,27 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="build.soapserver.ws"
+           targetNamespace="build.soapserver.ws" elementFormDefault="qualified">
+
+    <xs:element name="registerConnectionRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="source" type="tns:host"/>
+                <xs:element name="destination" type="tns:host"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="registerConnectionResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="accepted" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="host">
+        <xs:sequence>
+            <xs:element name="ip" type="xs:string"/>
+            <xs:element name="dns" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
