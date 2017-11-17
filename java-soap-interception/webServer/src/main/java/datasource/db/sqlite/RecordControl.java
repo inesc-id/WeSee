@@ -59,7 +59,7 @@ public class RecordControl extends AbstractEntityContainer {
     }
 
     public List<ConnectionRecord> getRecords() {
-        List<DbConnectionRecord> dbRecords = StatementHelper.executeWithResult(statement -> { return statement; },
+        List<DbConnectionRecord> dbRecords = StatementHelper.executeWithResult(statement -> statement,
                 connection, SELECT_RECORD_TEMPLATE, new ListDbConnectionRecordExtractor());
         return restoreRecords(dbRecords);
     }

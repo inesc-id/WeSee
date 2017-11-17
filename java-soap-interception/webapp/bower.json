@@ -1,0 +1,23 @@
+{
+  "name": "webapp",
+  "homepage": "https://github.com/inesc-id/WeSee",
+  "authors": [
+    "sergepodaneff@gmail.com"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "openui5-sap.ui.core": "openui5/packaged-sap.ui.core",  
+    "openui5-sap.m": "openui5/packaged-sap.m",  
+    "openui5-themelib_sap_belize": "openui5/packaged-themelib_sap_belize"
+  }
+}

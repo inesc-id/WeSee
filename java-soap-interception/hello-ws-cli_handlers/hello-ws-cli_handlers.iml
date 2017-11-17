@@ -31,5 +31,6 @@
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.2.0" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.codehaus.woodstox:stax2-api:3.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.sun.org.apache.xml.internal:resolver:20050927" level="project" />
+    <orderEntry type="library" name="Maven: jpcap:jpcap:0.1.18-002" level="project" />
   </component>
 </module>

@@ -10,7 +10,6 @@ import java.util.Map;
 @Controller
 public class MainController {
     @GetMapping("/")
-
     public ModelAndView index() {
         Map<String, String> model = new HashMap<>();
         model.put("name", "Alexey");

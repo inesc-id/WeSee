@@ -58,3 +58,12 @@ build/
 # Maven
 webServer/target/
 mylogfile.log
+
+# web downloaded resources
+webapp/bower_components
+webapp/node_modules
+# visual studio code project
+webapp/.vscode
+
+# generated files from webapp project
+webServer\src\main\resources\static

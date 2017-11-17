@@ -18,7 +18,7 @@ import ws.soapserver.build.RegisterConnectionResponse;
 @Endpoint
 public class ConnectionRegistrationEndpoint {
 
-    private static final String NAMESPACE_URI = "github.com/WeSee";
+    private static final String NAMESPACE_URI = "https://github.com/inesc-id/WeSee";
 
     private IInterceptionDataProvider connectionDataRepository;
 

@@ -63,9 +63,9 @@ public class InterceptionDataProviderTests {
         Set<Integer> userIds = new HashSet<>();
         for (ConnectionRecord record: records)
         {
-            dataProvider.deleteRecord(record.id);
             userIds.add(record.fromUser.id);
             userIds.add(record.toUser.id);
+            dataProvider.deleteRecord(record.id);
         }
         for (int userId : userIds) {
             dataProvider.deleteUser(userId);

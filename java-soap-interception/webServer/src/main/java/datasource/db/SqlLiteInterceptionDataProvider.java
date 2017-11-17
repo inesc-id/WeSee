@@ -4,7 +4,9 @@ import datasource.IInterceptionDataProvider;
 import datasource.db.sqlite.RecordControl;
 import datasource.db.sqlite.UserControl;
 import datasource.model.ConnectionRecord;
+import org.springframework.core.io.ClassPathResource;
 
+import java.io.IOException;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Date;
@@ -22,10 +24,16 @@ public class SqlLiteInterceptionDataProvider implements IInterceptionDataProvide
     private RecordControl recordControl;
     private UserControl userControl;
     private void connect() throws SQLException {
-        String url = "jdbc:sqlite:src/main/resources/db/interceptionDb";
-        connection = DriverManager.getConnection(url);
-        userControl = new UserControl(connection);
-        recordControl = new RecordControl(connection, userControl);
+        try {
+            String path = new ClassPathResource("/db/interceptionDb").getFile().getPath();
+            String url = "jdbc:sqlite:" + path;
+            connection = DriverManager.getConnection(url);
+            userControl = new UserControl(connection);
+            recordControl = new RecordControl(connection, userControl);
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.exit(e.hashCode());
+        }
     }
 
 
