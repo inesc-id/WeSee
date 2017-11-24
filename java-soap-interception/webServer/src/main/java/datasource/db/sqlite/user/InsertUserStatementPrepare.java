@@ -17,7 +17,7 @@ public class InsertUserStatementPrepare implements IStatementPrepare {
     public PreparedStatement setupStatement(PreparedStatement statement) throws SQLException {
         statement.setString(1, user.dns);
         statement.setString(2, user.ip);
-        statement.setInt(1, user.isIpv4? 1 : 0);
+        statement.setInt(3, user.isIpv4? 1 : 0);
         return statement;
     }
 }

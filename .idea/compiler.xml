@@ -11,9 +11,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hello-ws_handlers" />
         <module name="webServer" />
-        <module name="ws-handlers" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
