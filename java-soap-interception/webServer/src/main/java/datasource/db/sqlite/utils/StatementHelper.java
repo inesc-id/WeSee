@@ -1,37 +1,55 @@
 package datasource.db.sqlite.utils;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import datasource.model.ConnectionRecord;
+
+import java.sql.*;
 import java.util.List;
 
 public class StatementHelper {
 
-    public static boolean executeWithoutResult(IStatementPrepare statementPrepare, Connection connection,
+    public static boolean executeWithoutResult(IStatementPrepare statementPrepare, String connectionString,
                                                String statementTemplate)
     {
+        Connection connection = null;
         try
         {
+            connection = DriverManager.getConnection(connectionString);
             PreparedStatement statement = prepareStatement(connection, statementTemplate, statementPrepare);
             statement.execute();
+            connection.close();
             return true;
         } catch (SQLException e) {
+            if (connection != null)
+                try {
+                    connection.close();
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
             e.printStackTrace();
             return false;
         }
     }
 
-    public static <T> T executeWithResult(IStatementPrepare statementPrepare, Connection connection,
+    public static <T> T executeWithResult(IStatementPrepare statementPrepare, String connectionString,
                                         String statementTemplate, IDataExtractor<T> dataExtractor)
     {
+        Connection connection = null;
         try
         {
+            connection = DriverManager.getConnection(connectionString);
             PreparedStatement statement = prepareStatement(connection, statementTemplate, statementPrepare);
             ResultSet set = statement.executeQuery();
-            return dataExtractor.readDataFromStatement(set);
+            T result = dataExtractor.readDataFromStatement(set);
+            connection.close();
+            return result;
         } catch (SQLException e) {
             e.printStackTrace();
+            if (connection != null)
+                try {
+                    connection.close();
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
             return null;
         }
     }

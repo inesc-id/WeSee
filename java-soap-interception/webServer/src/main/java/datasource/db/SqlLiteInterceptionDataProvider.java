@@ -7,12 +7,9 @@ import datasource.model.ConnectionRecord;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.IOException;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
-import java.sql.Connection;
-
 
 public class SqlLiteInterceptionDataProvider implements IInterceptionDataProvider
 {
@@ -20,16 +17,14 @@ public class SqlLiteInterceptionDataProvider implements IInterceptionDataProvide
         connect();
     }
 
-    private Connection connection;
     private RecordControl recordControl;
     private UserControl userControl;
     private void connect() throws SQLException {
         try {
             String path = new ClassPathResource("/db/interceptionDb").getFile().getPath();
-            String url = "jdbc:sqlite:" + path;
-            connection = DriverManager.getConnection(url);
-            userControl = new UserControl(connection);
-            recordControl = new RecordControl(connection, userControl);
+            String connectionString = "jdbc:sqlite:" + path;
+            userControl = new UserControl(connectionString);
+            recordControl = new RecordControl(connectionString, userControl);
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(e.hashCode());
@@ -62,7 +57,4 @@ public class SqlLiteInterceptionDataProvider implements IInterceptionDataProvide
         return userControl.deleteUser(id);
     }
 
-    public void close() throws SQLException {
-        connection.close();
-    }
 }

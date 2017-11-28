@@ -28,7 +28,6 @@ public class InterceptionDataProviderTests {
         List<ConnectionRecord> foundData = findData(dataProvider, records, startTime, endTime);
         Assert.assertNotNull(foundData);
         deleteData(dataProvider, foundData);
-        dataProvider.close();
     }
 
     /** @returns list in case of the same data with filled date and ids or null */

@@ -23,23 +23,28 @@ import java.util.concurrent.*;
 
 public class PacketsListenerTest extends Assert {
     private final String dns = "stackoverflow.com";
-    private final String ip = "151.101.193.69";
     @Test
     public void testNewConnection() throws IOException {
         INewConnectionInterfaceListener connectionsListener = new Pcap4JHostNewConnectionListener(
                 new TimedStorageBuilder(10000), 100000);
+        String ip = InetAddress.getByName("stackoverflow.com").getHostAddress();
         long testTimeMs = 400000;
         long startTimeMs = new Date().getTime();
         Runnable downloadWebPageTask = () -> getWebPage(dns);
+        try {
+            HostPair newConnection = connectionsListener.waitNextConnection();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         boolean isPacketFound = false;
-        downloadWebPageTask.run();
         while ((new Date()).getTime() - startTimeMs < testTimeMs)
         {
+            downloadWebPageTask.run();
             try {
                 HostPair newConnection = connectionsListener.waitNextConnection();
                 if (newConnection == null)
                     continue;
-                if (isConnectionSame(newConnection, ip, dns))
+                if (isConnectionSame(newConnection, ip))
                 {
                     isPacketFound = true;
                     break;
@@ -60,10 +65,9 @@ public class PacketsListenerTest extends Assert {
         return false;
     }
 
-    private boolean isConnectionSame(HostPair connection, String ip, String dns)
+    private boolean isConnectionSame(HostPair connection, String ip)
     {
-        return connection.destination.getIp().equals(ip) &&
-                connection.destination.getDns().contains(dns);
+        return connection.destination.getIp().equals(ip);
 
     }
 

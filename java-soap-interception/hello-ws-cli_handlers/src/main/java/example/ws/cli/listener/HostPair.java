@@ -14,4 +14,12 @@ public class HostPair {
         this.source = source;
         this.destination = destination;
     }
+
+    @Override
+    public String toString() {
+        return "HostPair{" +
+                "source=" + source.getIp() +
+                ", destination=" + destination.getIp() +
+                '}';
+    }
 }

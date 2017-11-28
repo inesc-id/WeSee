@@ -17,9 +17,9 @@ public class RecordControl extends AbstractEntityContainer {
 
     private UserControl userControl;
 
-    public RecordControl(Connection connection, UserControl userControl)
+    public RecordControl(String connectionString, UserControl userControl)
     {
-        super(connection);
+        super(connectionString);
         this.userControl = userControl;
     }
 
@@ -38,7 +38,7 @@ public class RecordControl extends AbstractEntityContainer {
         record.toUser.id = createUserIfNotExist(record.toUser);
         StatementHelper.executeWithoutResult(
                 new SetDbConnectionRecordPrepare(DbConnectionRecord.fromConnectionRecord(record)),
-                connection, ADD_RECORD_TEMPLATE);
+                connectionString, ADD_RECORD_TEMPLATE);
     }
 
     private int createUserIfNotExist(User user)
@@ -47,20 +47,21 @@ public class RecordControl extends AbstractEntityContainer {
         if (dbUserRecord != null)
             return dbUserRecord.id;
         userControl.addUser(user);
-        return userControl.getUser(user.ip).id;
+        User addedUser = userControl.getUser(user.ip);
+        return addedUser.id;
     }
 
 
     public List<ConnectionRecord> getRecords(Date fromTime, Date untilTime) {
         List<DbConnectionRecord> dbRecords = StatementHelper.executeWithResult(
                 new SetDatetimeFiltersPrepare(fromTime, untilTime),
-                connection, SELECT_RECORD_DATE_FILTERED_TEMPLATE, new ListDbConnectionRecordExtractor());
+                connectionString, SELECT_RECORD_DATE_FILTERED_TEMPLATE, new ListDbConnectionRecordExtractor());
         return restoreRecords(dbRecords);
     }
 
     public List<ConnectionRecord> getRecords() {
         List<DbConnectionRecord> dbRecords = StatementHelper.executeWithResult(statement -> statement,
-                connection, SELECT_RECORD_TEMPLATE, new ListDbConnectionRecordExtractor());
+                connectionString, SELECT_RECORD_TEMPLATE, new ListDbConnectionRecordExtractor());
         return restoreRecords(dbRecords);
     }
 
@@ -102,6 +103,7 @@ public class RecordControl extends AbstractEntityContainer {
     }
 
     public boolean deleteRecord(int id) {
-        return StatementHelper.executeWithoutResult(new SetIdStatementDelegate(id), connection, DELETE_RECORD_TEMPLATE);
+        return StatementHelper.executeWithoutResult(new SetIdStatementDelegate(id),
+                connectionString, DELETE_RECORD_TEMPLATE);
     }
 }

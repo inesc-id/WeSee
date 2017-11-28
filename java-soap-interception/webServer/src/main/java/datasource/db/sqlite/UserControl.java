@@ -16,30 +16,30 @@ public class UserControl extends AbstractEntityContainer {
     private final String DELETE_USER_BY_ID_TEMPLATE = "delete from user where id = ?";
 
 
-    public UserControl(Connection connection) {
-        super(connection);
+    public UserControl(String connectionString) {
+        super(connectionString);
     }
 
     public User getUser(int userId)
     {
-        return StatementHelper.executeWithResult(new SetIdStatementDelegate(userId), connection,
+        return StatementHelper.executeWithResult(new SetIdStatementDelegate(userId), connectionString,
                 SELECT_USER_BY_ID_TEMPLATE, new UserDataExtractor());
     }
 
     public User getUser(String ip)
     {
-        return StatementHelper.executeWithResult(new SetIpStatementPrepare(ip), connection,
+        return StatementHelper.executeWithResult(new SetIpStatementPrepare(ip), connectionString,
                 SELECT_USER_BY_IP_TEMPLATE, new UserDataExtractor());
     }
 
     public boolean addUser(User user)
     {
-        return StatementHelper.executeWithoutResult(new InsertUserStatementPrepare(user), connection,
+        return StatementHelper.executeWithoutResult(new InsertUserStatementPrepare(user), connectionString,
                 ADD_USER_TEMPLATE);
     }
 
     public boolean deleteUser(int id) {
-        return StatementHelper.executeWithoutResult(new SetIdStatementDelegate(id), connection,
+        return StatementHelper.executeWithoutResult(new SetIdStatementDelegate(id), connectionString,
                 DELETE_USER_BY_ID_TEMPLATE);
     }
 }

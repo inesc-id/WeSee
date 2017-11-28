@@ -15,6 +15,4 @@ public interface IInterceptionDataProvider
 
     boolean deleteRecord(int id);
     boolean deleteUser(int id);
-
-    void close() throws SQLException;
 }

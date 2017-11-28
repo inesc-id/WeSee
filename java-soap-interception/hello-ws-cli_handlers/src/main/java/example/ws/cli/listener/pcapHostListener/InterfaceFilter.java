@@ -14,8 +14,6 @@ public class InterfaceFilter {
             throws PcapNativeException
     {
         List<PcapNetworkInterface> allInterfaces = Pcaps.findAllDevs();
-        // todo
-        allInterfaces = allInterfaces.subList(1, 2);
         List<PcapNetworkInterface> newInterfaces = new ArrayList<>();
         for (PcapNetworkInterface pcapNetworkInterface : allInterfaces) {
             if (existingInterfaceNames.contains(pcapNetworkInterface.getName()))
@@ -31,7 +29,7 @@ public class InterfaceFilter {
                                                Set<String> activeInterfaces,
                                                Map<String, Future<HostPair>> runningProcesses)
     {
-        Set<String> registeredInterfaceNames = registeredInterfaces.keySet();
+        Set<String> registeredInterfaceNames = new HashSet<>(registeredInterfaces.keySet());
         for (String registeredInterfaceName: registeredInterfaceNames)
         {
             if (!(activeInterfaces.contains(registeredInterfaceName)))

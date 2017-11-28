@@ -1,13 +1,11 @@
 package datasource.db.sqlite;
 
-import java.sql.Connection;
-
 abstract class AbstractEntityContainer
 {
-    protected Connection connection;
+    protected String connectionString;
 
-    public AbstractEntityContainer(Connection connection)
+    public AbstractEntityContainer(String connectionString)
     {
-        this.connection = connection;
+        this.connectionString = connectionString;
     }
 }
