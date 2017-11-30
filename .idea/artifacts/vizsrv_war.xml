@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="vizsrv:war">
+    <output-path>$PROJECT_DIR$/vizsrv/target</output-path>
+    <root id="archive" name="vizsrv-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="vizsrv:war exploded" />
+    </root>
+  </artifact>
+</component>
