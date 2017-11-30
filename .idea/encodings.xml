@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/java-soap-interception/hello-ws-cli_handlers" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java-soap-interception/hello-ws_handlers" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java-soap-interception/webServer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/java-soap-interception/ws-handlers" charset="UTF-8" />
-  </component>
-</project>
