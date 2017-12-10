@@ -1,23 +1,23 @@
 package example.ws.cli.listener.interfacing;
 
-import example.ws.cli.listener.HostPair;
-import example.ws.cli.listener.IConnectionsStorage;
+import example.ws.cli.listener.INewConnectionInterfaceListener;
+import interception.models.Connection;
+import interception.models.connection_models.ConnectionOccurrence;
+import interception.models.connection_models.Host;
 import org.pcap4j.core.*;
 import org.pcap4j.packet.IpPacket;
 import org.pcap4j.packet.Packet;
-import test.PacketsListenerTest;
 
 import java.net.InetAddress;
+import java.nio.charset.StandardCharsets;
 
-public class Pcap4JNewConnectionInterfaceListener extends AbstractInterfaceNewConnectionListener {
+public class Pcap4JNewConnectionInterfaceListener implements INewConnectionInterfaceListener {
     private PcapNetworkInterface networkInterface;
     private PcapHandle handle;
 
-    public Pcap4JNewConnectionInterfaceListener(IConnectionsStorage connectionsStorage,
-                                                PcapNetworkInterface networkInterface)
+    public Pcap4JNewConnectionInterfaceListener(PcapNetworkInterface networkInterface)
             throws PcapNativeException, NotOpenException
     {
-        super(connectionsStorage);
         this.networkInterface = networkInterface;
         init();
     }
@@ -41,7 +41,7 @@ public class Pcap4JNewConnectionInterfaceListener extends AbstractInterfaceNewCo
     }
 
     @Override
-    public HostPair waitNextConnection() throws Exception
+    public Connection waitNextConnection() throws Exception
     {
         while (true)
         {
@@ -55,18 +55,21 @@ public class Pcap4JNewConnectionInterfaceListener extends AbstractInterfaceNewCo
                 IpPacket ipPacket = extractIpPacket(packet);
                 if (ipPacket == null)
                     return null;
-                return putIfValidConnection(ipPacket.getHeader().getSrcAddr(), ipPacket.getHeader().getDstAddr());
+                if (!checkValidAddress(ipPacket.getHeader().getSrcAddr()) ||
+                        !checkValidAddress(ipPacket.getHeader().getDstAddr()))
+                    continue;
+                ConnectionOccurrence connectionOccurrence = new ConnectionOccurrence();
+                connectionOccurrence.callTimeMs = System.currentTimeMillis();
+                connectionOccurrence.message = new String(ipPacket.getPayload().getRawData(), StandardCharsets.UTF_8);
+
+                Connection connection = new Connection();
+                connection.source = new Host(ipPacket.getHeader().getSrcAddr());
+                connection.destination = new Host(ipPacket.getHeader().getDstAddr());
+                connection.occurrences = new ConnectionOccurrence[]{ connectionOccurrence};
+
+                return connection;
             }
         }
-    }
-
-    private HostPair putIfValidConnection(InetAddress fromAddress, InetAddress toAddress)
-    {
-        if (!(checkValidAddress(fromAddress) && checkValidAddress(toAddress)))
-            return null;
-        HostPair newConnection = connectionsStorage.putNewConnection(fromAddress.getHostAddress(),
-                toAddress.getHostAddress());
-        return newConnection;
     }
 
     private boolean checkValidAddress(InetAddress address)

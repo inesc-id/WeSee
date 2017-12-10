@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.util.concurrent.TimeUnit;
 
 public class TimedStorageTest extends Assert {
-    @Test
+/*    @Test
     public void testSameRecordInput() throws InterruptedException {
         String ip1 = "122.13.15.1";
         String ip2 = "201.233.109.99";
@@ -17,5 +17,5 @@ public class TimedStorageTest extends Assert {
         TimeUnit.MILLISECONDS.sleep(100);
         storage.clearOldConnections();
         assertNotNull(storage.putNewConnection(ip1, ip2));
-    }
+    }*/
 }

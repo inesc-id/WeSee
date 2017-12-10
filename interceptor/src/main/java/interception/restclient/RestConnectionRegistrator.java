@@ -1,5 +1,6 @@
 package interception.restclient;
 
+import interception.restclient.IConnectionRegistrator;
 import org.springframework.http.HttpEntity;
 import org.springframework.web.client.RestTemplate;
 import interception.models.ConnectionsEntity;

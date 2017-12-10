@@ -1,15 +1,14 @@
 package example.ws.cli.listener.storage;
 
-import example.ws.cli.listener.HostPair;
-import example.ws.cli.listener.IConnectionsStorage;
-import example.ws.server.HostExtension;
+import interception.models.Connection;
 import javafx.util.Pair;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.*;
 
-public class TimedStorage implements IConnectionsStorage {
+public class TimedStorage {
     /**
      * from-to ips/ call times
      */
@@ -31,7 +30,7 @@ public class TimedStorage implements IConnectionsStorage {
      * @param destinationIp
      * @return null if the old connection_models
      */
-    public HostPair putNewConnection(String sourceIp, String destinationIp)
+    public Connection putNewConnection(String sourceIp, String destinationIp)
     {
         clearOldConnections();
 
@@ -48,8 +47,10 @@ public class TimedStorage implements IConnectionsStorage {
         Pair<String,String> dnsPair = addDns(connectionsPair);
         addConnectionTimeOccurrence(connectionStatistics.occuranceTime, connectionsPair);
 
-        return new HostPair(HostExtension.createHost(sourceIp, dnsPair.getKey()),
-                HostExtension.createHost(destinationIp, dnsPair.getValue()));
+        throw new NotImplementedException();
+        /*return new HostPair(HostExtension.createHost(sourceIp, dnsPair.getKey()),
+         *       HostExtension.createHost(destinationIp, dnsPair.getValue()));
+         */
     }
 
     public void clearOldConnections()

@@ -1,7 +1,7 @@
 package example.ws.cli.listener;
 
-import example.ws.cli.listener.HostPair;
+import interception.models.Connection;
 
 public interface INewConnectionInterfaceListener {
-    HostPair waitNextConnection() throws Exception;
+    Connection waitNextConnection() throws Exception;
 }

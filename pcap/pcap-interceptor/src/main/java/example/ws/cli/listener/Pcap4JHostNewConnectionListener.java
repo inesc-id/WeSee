@@ -2,6 +2,7 @@ package example.ws.cli.listener;
 
 import example.ws.cli.listener.interfacing.Pcap4JNewConnectionInterfaceListener;
 import example.ws.cli.listener.pcapHostListener.InterfaceFilter;
+import interception.models.Connection;
 import org.pcap4j.core.NotOpenException;
 import org.pcap4j.core.PcapNativeException;
 import org.pcap4j.core.PcapNetworkInterface;
@@ -11,17 +12,15 @@ import java.util.concurrent.*;
 
 public class Pcap4JHostNewConnectionListener implements INewConnectionInterfaceListener {
 
-    private IConnectionsStorageBuilder storageBuilder;
     private Map<String, INewConnectionInterfaceListener> interfaceListeners = new HashMap<>();
-    private Map<String, Future<HostPair>> runningProcesses = new HashMap<>();
+    private Map<String, Future<Connection>> runningProcesses = new ConcurrentHashMap<>();
     private Set<String> hadInterfacePackets = new HashSet<>();
     private ExecutorService threadPool = Executors.newWorkStealingPool();
     private Semaphore semaphore = new Semaphore(0);
     private long interfacesExploreTimeMs;
     private long lastExploreTimeMs = 0;
 
-    public Pcap4JHostNewConnectionListener(IConnectionsStorageBuilder storageBuilder, long interfacesExploreTimeMs) {
-        this.storageBuilder = storageBuilder;
+    public Pcap4JHostNewConnectionListener(long interfacesExploreTimeMs) {
         this.interfacesExploreTimeMs = interfacesExploreTimeMs;
     }
 
@@ -34,7 +33,7 @@ public class Pcap4JHostNewConnectionListener implements INewConnectionInterfaceL
             for (PcapNetworkInterface pcapInterface : validInterfaces) {
                 try {
                     interfaceListeners.put(pcapInterface.getName(),
-                            new Pcap4JNewConnectionInterfaceListener(storageBuilder.buildStorage(), pcapInterface));
+                            new Pcap4JNewConnectionInterfaceListener(pcapInterface));
                 } catch (NotOpenException e) {
                     e.printStackTrace();
                     // interface is not available
@@ -47,7 +46,7 @@ public class Pcap4JHostNewConnectionListener implements INewConnectionInterfaceL
     }
 
     @Override
-    public HostPair waitNextConnection() {
+    public Connection waitNextConnection() {
         long timeLeftMs = interfacesExploreTimeMs - (System.currentTimeMillis() - lastExploreTimeMs);
         if (timeLeftMs <= 0)
         {
@@ -64,13 +63,16 @@ public class Pcap4JHostNewConnectionListener implements INewConnectionInterfaceL
             }
             return null;
         }
-        HostPair newConnection = null;
+        Connection newConnection = null;
         while (newConnection == null && timeLeftMs > 0)
         {
             timeLeftMs = interfacesExploreTimeMs - (System.currentTimeMillis() - lastExploreTimeMs);
             try {
                 newConnection = getNewConnection(timeLeftMs);
-                return newConnection;
+                if (newConnection != null)
+                {
+                    return newConnection;
+                }
             } catch (InterruptedException e) {
                 return null;
             }
@@ -78,16 +80,16 @@ public class Pcap4JHostNewConnectionListener implements INewConnectionInterfaceL
         return null;
     }
 
-    private HostPair getNewConnection(long timeLeftMs) throws InterruptedException {
+    private Connection getNewConnection(long timeLeftMs) throws InterruptedException {
         if (!semaphore.tryAcquire(timeLeftMs, TimeUnit.MILLISECONDS))
             return null;
         return findResultAndRunNewProcess();
     }
 
-    private HostPair findResultAndRunNewProcess()
+    private Connection findResultAndRunNewProcess()
     {
         Set<String> runningProcessNames = new HashSet<>(runningProcesses.keySet());
-        Future<HostPair> task = null;
+        Future<Connection> task = null;
         String doneInterfaceName = null;
         for (String runningInterfaceName : runningProcessNames)
         {
@@ -102,14 +104,18 @@ public class Pcap4JHostNewConnectionListener implements INewConnectionInterfaceL
             return null;
 
         try {
-            HostPair result = task.get();
-            if (result != null && (!hadInterfacePackets.contains(doneInterfaceName)))
-                hadInterfacePackets.add(doneInterfaceName);
-            runningProcesses.remove(doneInterfaceName);
-            runNewProcess(doneInterfaceName);
+            Connection result = task.get();
+            if (doneInterfaceName != null)
+            {
+                if (result != null && (!hadInterfacePackets.contains(doneInterfaceName)))
+                    hadInterfacePackets.add(doneInterfaceName);
+                runningProcesses.remove(doneInterfaceName);
+                runNewProcess(doneInterfaceName);
+            }
             return result;
         } catch (Exception e) {
-            removeInterface(doneInterfaceName);
+            if (doneInterfaceName != null)
+                removeInterface(doneInterfaceName);
             e.printStackTrace();
             return null;
         }
@@ -139,18 +145,18 @@ public class Pcap4JHostNewConnectionListener implements INewConnectionInterfaceL
         }
         INewConnectionInterfaceListener listener = interfaceListeners.get(interfaceName);
 
-        Callable<HostPair> task =  () ->
+        Callable<Connection> task =  () ->
         {
             if (listener == null)
             {
                 removeInterface(interfaceName);
                 return null;
             }
-            HostPair result = listener.waitNextConnection();
+            Connection result = listener.waitNextConnection();
             semaphore.release();
             return result;
         };
-        Future<HostPair> future = threadPool.submit(task);
+        Future<Connection> future = threadPool.submit(task);
         runningProcesses.put(interfaceName, future);
     }
 }

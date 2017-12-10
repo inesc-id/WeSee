@@ -1,7 +1,7 @@
 package example.ws.cli.listener.pcapHostListener;
 
-import example.ws.cli.listener.HostPair;
 import example.ws.cli.listener.INewConnectionInterfaceListener;
+import interception.models.Connection;
 import org.pcap4j.core.PcapNativeException;
 import org.pcap4j.core.PcapNetworkInterface;
 import org.pcap4j.core.Pcaps;
@@ -27,7 +27,7 @@ public class InterfaceFilter {
 
     public static void clearUnactiveInterfaces(Map<String, INewConnectionInterfaceListener> registeredInterfaces,
                                                Set<String> activeInterfaces,
-                                               Map<String, Future<HostPair>> runningProcesses)
+                                               Map<String, Future<Connection>> runningProcesses)
     {
         Set<String> registeredInterfaceNames = new HashSet<>(registeredInterfaces.keySet());
         for (String registeredInterfaceName: registeredInterfaceNames)
@@ -43,7 +43,7 @@ public class InterfaceFilter {
     public static void removeInterface(String interfaceName,
                                        Map<String, INewConnectionInterfaceListener> registeredInterfaces,
                                        Set<String> activeInterfaces,
-                                       Map<String, Future<HostPair>> runningProcesses)
+                                       Map<String, Future<Connection>> runningProcesses)
     {
         registeredInterfaces.remove(interfaceName);
         runningProcesses.remove(interfaceName);
