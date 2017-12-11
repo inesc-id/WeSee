@@ -40,4 +40,6 @@ public class GraphDataController {
         return messagesLoader.getConnectionMessages(connectionId, fromDate, toDate);
     }
 
+
+
 }

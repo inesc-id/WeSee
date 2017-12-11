@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/WeSee.iml" filepath="$PROJECT_DIR$/.idea/WeSee.iml" />
-      <module fileurl="file://$PROJECT_DIR$/pcap/pcap-interceptor/hello-ws-cli_handlers.iml" filepath="$PROJECT_DIR$/pcap/pcap-interceptor/hello-ws-cli_handlers.iml" />
       <module fileurl="file://$PROJECT_DIR$/interceptor/interceptor.iml" filepath="$PROJECT_DIR$/interceptor/interceptor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pcap/pcap-interceptor/pcap-interceptor.iml" filepath="$PROJECT_DIR$/pcap/pcap-interceptor/pcap-interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/soap/soap-interceptor/soap-interceptor.iml" filepath="$PROJECT_DIR$/soap/soap-interceptor/soap-interceptor.iml" />
       <module fileurl="file://$PROJECT_DIR$/soap/soap-receiver/soap-receiver.iml" filepath="$PROJECT_DIR$/soap/soap-receiver/soap-receiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/soap/soap-sender/soap-sender.iml" filepath="$PROJECT_DIR$/soap/soap-sender/soap-sender.iml" />

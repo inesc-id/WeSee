@@ -11,7 +11,7 @@ To compile package:
 
 To install package:
   mvn install
-  (the JAR is made available in the local maven repository ~/.m2/repository)
+  (the JAR is made available in the local maven wesee.vizsrv.repository ~/.m2/wesee.vizsrv.repository)
   (other projects can now refer to the library as a dependency)
 
 

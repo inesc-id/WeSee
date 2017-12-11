@@ -32,6 +32,7 @@ public class ConnectionsLoader {
         Link link = new Link();
         link.sourceId = connection.sourceHost.id;
         link.destinationId = connection.destinationHost.id;
+        link.dataSourceId = connection.dataSource.id;
         link.id = connection.id;
         link.messagesCount = connection.connectionOccurrences.size();
         return link;
@@ -44,6 +45,7 @@ public class ConnectionsLoader {
         node.calls = 0;
         node.ip = host.ip;
         node.dns = host.dns;
+        node.dataSourceId = host.dataSource.id;
         return node;
     }
 
@@ -57,6 +59,12 @@ public class ConnectionsLoader {
         List<Link> linkList = new ArrayList<>();
         for (Connection dbConnection : dbConnections) {
             Link link = createLinkAndUpdateNodes(dbConnection, nodeMap, fromDate, toDate);
+            link.lastMessage =
+                   ConnectionMessagesLoader.fromConnectionOccurrences(
+                       connectionOccurrenceRepository.findFirstByConnectionAndTimeMsBeforeOrderByTimeMsDesc(
+                               dbConnection, toDate),
+                       dbConnection.id
+                   );
             linkList.add(link);
         }
         return new LinksAndNodes(linkList, nodeMap.values());

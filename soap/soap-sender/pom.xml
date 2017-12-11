@@ -34,7 +34,7 @@
         <ws.url>http://localhost:8080/hello-ws/endpoint</ws.url>
         <wsdl.url>${ws.url}?WSDL</wsdl.url>
 
-        <mainclass>example.ws.cli.HelloClient</mainclass>
+        <mainclass>example.ws.cli.Main</mainclass>
     </properties>
 
     <build>

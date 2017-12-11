@@ -16,6 +16,7 @@
     <bytecodeTargetLevel>
       <module name="hello-ws-cli_handlers" target="1.8" />
       <module name="interceptor" target="1.6" />
+      <module name="pcap-interceptor" target="1.8" />
       <module name="soap-interceptor" target="1.8" />
       <module name="soap-receiver" target="1.8" />
       <module name="soap-sender" target="1.8" />
