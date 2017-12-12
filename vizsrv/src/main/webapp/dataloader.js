@@ -7,12 +7,18 @@ var dataloader = new function () {
     }
 
     this.loadConnections = function (dataSourceIds, fromDate, toDate, resultRecievedFunction) {
+        if (dataSourceIds.length == 0)
+        {
+            resultRecievedFunction({nodes:[], links:[]});
+            return;
+        }
         var data = {
             dataSourceIds: dataSourceIds.join(','),
             fromDate: fromDate,
             toDate: toDate
         };
         $.getJSON(restInterfaceUrl + "/connections", data, function(result){
+            console.debug(result);
             resultRecievedFunction(result);
         });
     }

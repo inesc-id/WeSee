@@ -12,13 +12,7 @@ var graph = new function () {
     }
 
     this.resize();
-    var simulation = d3.forceSimulation()
-        .force("link",
-          d3.forceLink()
-          .id(function(d) { return d.ip; })
-          .distance(function (d) { return objectSizes.getLinkLength(d.calls)}))
-        .force("charge", d3.forceManyBody())
-        .force("center", d3.forceCenter(width / 2, height / 2));
+    var simulation = {};
 
     this.refresh = function(dataSourceDescription, processedNodeAndLinks)
     {
@@ -65,7 +59,19 @@ var graph = new function () {
             .selectAll("line")
             .data(savedGraphData.links)
             .enter().append("line")
-            .attr("stroke-width", function(d) { return objectSizes.getLinkWidth(d.calls); });
+            .attr("stroke-width", function(d) { return objectSizes.getLinkWidth(d.calls); })
+            .attr("title", function (link) {
+                console.debug(link);
+                return link.source + "-" + link.target;
+            })
+            .attr("data-content", function (link) {
+                return popupsUtils.generateLinkPopOverMessage(link, savedDsDescription.dataSourcesMap);
+            });
+        $(".links line").popover({
+            container: 'body',
+            html: true,
+            trigger: 'hover'
+        });
         return link;
     };
 
@@ -80,26 +86,39 @@ var graph = new function () {
         var node = nodes.append("g")
             .attr("class", "node");
 
-        node.append("circle")
+        var circle = node.append("circle")
             .attr("r", function(node){ return objectSizes.getNodeRadius(node.calls);})
             .attr("fill", color(1))
+            .attr("title", function (node) { return node.ip; })
+            .attr("data-content", function (node) { return popupsUtils.generateNodePopOverMessage(node, savedDsDescription.dataSourcesMap); })
             .call(d3.drag()
                 .on("start", dragstarted)
                 .on("drag", dragged)
                 .on("end", dragended));
 
+        $('.node circle').popover({
+            container: 'body',
+            html: true,
+            trigger: 'hover'
+        });
         node.append("text")
             .attr("dy", "1.5em")
             .attr("text-anchor", "middle")
             .text(function(node) { return "ip: " + node.ip; });
+
         return node;
 
     };
 
     function supportTransforms(node,link)
     {
-        simulation
-            .nodes(savedGraphData.nodes)
+        simulation = d3.forceSimulation(savedGraphData.nodes)
+            .force("repelForce", d3.forceManyBody().strength(-500).distanceMin(50))
+            .force("link",
+                d3.forceLink()
+                    .id(function(d) { return d.ip; })
+                    .distance(function (d) { return objectSizes.getLinkLength(d.calls)}))
+            .force("center", d3.forceCenter(width / 2, height / 2))
             .on("tick", ticked);
 
         simulation.force("link")
@@ -125,5 +144,4 @@ var graph = new function () {
         var node = drawNodes(gRoot);
         supportTransforms(node, link);
     };
-
 };

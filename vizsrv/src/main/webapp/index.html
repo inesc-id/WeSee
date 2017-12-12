@@ -18,6 +18,7 @@
         </style>
 
         <script src="resources/jquery/jquery.js"></script>
+        <script src="resources/popper/popper.js"></script>
         <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <script src="resources/bootstrap/js/bootstrap.js"></script>
         <script src="resources/d3/d3.js"></script>
@@ -32,16 +33,6 @@
                                 <div class="panel-heading">Sources</div>
                                 <div class="panel-body">
                                     <ul id="data_source_list" class="list-group">
-                                        <li class="list-group-item">
-                                            <div class="checkbox">
-                                                <label><input type="checkbox" value="">Option 1</label>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="checkbox">
-                                                <label><input type="checkbox" value="">Option 1</label>
-                                            </div>
-                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -50,9 +41,9 @@
                             <div class="panel panel-default">
                                 <div class="panel-heading">Time</div>
                                 <div class="panel-body">
-                                    <input id="minDt" type="range" min="100" max="200"/>
+                                    <input id="minDt" type="range"/>
                                     <p id="minDtText">150</p>
-                                    <input id="maxDt" type="range" min="100" max="200"/>
+                                    <input id="maxDt" type="range"/>
                                     <p id="maxDtText">200</p>
                                 </div>
                             </div>
@@ -72,14 +63,23 @@
         </div>
     <script src="draw/objectSizes.js"></script>
     <script src="drawUtils.js"></script>
+    <script src="popupUtils.js"></script>
     <script src="dataloader.js"></script>
-    <script src="filterGraphDataControl.js"></script>
+    <script src="inputControl.js"></script>
     <script src="graph.js"></script>
+
     <script>
         dataloader.loadDataSources(function(rawDataSourceDescription)
         {
             var processedDataSourceDescription = drawUtils.getDataSourceMapping(rawDataSourceDescription);
             inputControl.setDataSources(processedDataSourceDescription);
+        });
+        $('#example').popover({
+            container: 'body',
+            trigger: 'focus',
+            title: 'my title',
+            content: "my content",
+            trigger: "hover"
         });
     </script>
     </body>

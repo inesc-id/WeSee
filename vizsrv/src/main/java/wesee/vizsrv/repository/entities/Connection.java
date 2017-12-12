@@ -17,7 +17,7 @@ public class Connection implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER,optional=false)
     @JoinColumn(name="destinationHostId")
     public Host destinationHost;
-    @ManyToOne(fetch = FetchType.LAZY,optional=false)
+    @ManyToOne(fetch = FetchType.EAGER,optional=false)
     @JoinColumn(name="dataSourceId")
     public DataSource dataSource;
     @OneToMany(mappedBy = "connection", fetch = FetchType.LAZY)

@@ -38,7 +38,7 @@ public class HibernateLoader implements IRepositoryLoader {
     public Connection[] getConnections(long[] dataSourceIds, long startDateMs, long endDateMs) {
         List<Connection> connectionList = new ArrayList<>();
         List<Long> dataSourceIdList = new ArrayList<>();
-        dataSourceIdList.add(dataSourceIds[0]);
+        Arrays.stream(dataSourceIds).forEach(dataSourceIdList::add);
         connectionRepository.findByBetweenTimeAndDataSource_IdIn(startDateMs, endDateMs, dataSourceIdList)
                 .forEach(connectionList::add);
         Connection[] connectionArray = new Connection[connectionList.size()];

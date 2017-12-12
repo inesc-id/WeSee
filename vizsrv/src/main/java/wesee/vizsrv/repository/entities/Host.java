@@ -12,7 +12,7 @@ public class Host implements Serializable {
     public long id;
     @Column(nullable = false)
     public String ip;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="dataSourceId")
     public DataSource dataSource;
     @NotNull

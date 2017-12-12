@@ -20,7 +20,7 @@ public class ConnectionMessagesLoader {
     {
         LinkMessage linkMessage = new LinkMessage();
         linkMessage.id = dbModel.id;
-        linkMessage.dataSourceId = dbModel.connection.id;
+        linkMessage.dataSourceId = dbModel.connection.dataSource.id;
         linkMessage.connectionId = optionalConnectionId == null? dbModel.connection.id : optionalConnectionId;
         linkMessage.dateMs = dbModel.timeMs;
         linkMessage.message = dbModel.getMessage();
