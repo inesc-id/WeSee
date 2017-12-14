@@ -37,7 +37,6 @@ var popupsUtils = new function () {
 
             link.variations.map(function(variation)
             {
-                console.debug(variation);
                 var calledDate = new Date(variation.lastMessage.dateMs);
                 var text =
                     '<li>' + dataSourceMap[variation.dataSourceId].name +

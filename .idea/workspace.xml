@@ -6,53 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="957ca1e1-6817-48c1-82db-f588bcdda0bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-grid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-grid.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-grid.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-grid.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-reboot.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-reboot.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-reboot.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-reboot.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.bundle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.bundle.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.bundle.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.bundle.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper-utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper-utils.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper-utils.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper-utils.min.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper.min.js.map" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-theme.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-theme.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/filterGraphDataControl.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/messagesPopupControl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/dataTables.bootstrap4.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/dataTables.select.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/jquery.dataTables.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateLoader.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateLoader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Connection.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Connection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Host.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Host.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.css" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.min.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js" />
     </list>
     <ignored path="$PROJECT_DIR$/interceptor/target/" />
     <ignored path="$PROJECT_DIR$/vizsrv/target/" />
@@ -88,48 +51,30 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="76" column="8" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="82" selection-end-column="11" />
+            <state relative-caret-position="273">
+              <caret line="106" column="4" lean-forward="false" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
+              <folding>
+                <element signature="e#1139#1146#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messagesPopupControl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/messagesPopupControl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HibernateLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="popupUtils.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="571">
-              <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="drawUtils.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="56" column="45" lean-forward="false" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+            <state relative-caret-position="483">
+              <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -139,17 +84,27 @@
         <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/LinkMessage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="42">
+              <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractGraphObject.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/AbstractGraphObject.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
               <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dataloader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js">
+      <file leaf-file-name="drawUtils.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -164,6 +119,7 @@
         <option value="HTML File" />
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -178,6 +134,11 @@
       <find>$tip</find>
       <find>.insertAfter(this.$element)</find>
       <find>co</find>
+      <find>console</find>
+      <find>conso</find>
+      <find>vv</find>
+      <find>v</find>
+      <find>myModal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,8 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/rest/MainPageController.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/resources/static/resources/index.html" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/http/MainPageController.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/public/pub.html" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/resources/static/index.html" />
@@ -238,15 +197,17 @@
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/popups.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionsLoader.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Host.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Connection.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/style.css" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/messagesPopupControl.js" />
       </list>
     </option>
   </component>
@@ -309,10 +270,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -439,6 +397,25 @@
               <item name="WeSee" type="462c0819:PsiDirectoryNode" />
               <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="datatables" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -462,6 +439,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -484,6 +464,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -504,11 +485,11 @@
       <recent name="wesee.vizsrv.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\datatables" />
       <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\popper" />
       <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\bootstrap" />
       <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources" />
       <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\d3" />
-      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\jquery" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -773,7 +754,9 @@
       <workItem from="1512899460354" duration="46843000" />
       <workItem from="1512994358856" duration="11695000" />
       <workItem from="1513007894832" duration="26600000" />
-      <workItem from="1513077321700" duration="25462000" />
+      <workItem from="1513077321700" duration="26966000" />
+      <workItem from="1513149004740" duration="23154000" />
+      <workItem from="1513275401516" duration="7457000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild data layer with rest controllers">
       <created>1512950014365</created>
@@ -789,7 +772,14 @@
       <option name="project" value="LOCAL" />
       <updated>1513036040230</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Popups with brief data, modified forces, fixed bag with dataSourceid">
+      <created>1513106675313</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1513106675313</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -825,7 +815,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="252142000" />
+    <option name="totallyTimeSpent" value="284257000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -840,34 +830,34 @@
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28929386" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21535982" sideWeight="0.49280575" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39635536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28929386" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28929386" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21535982" sideWeight="0.49280575" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32801822" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28929386" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22892939" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27712137" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2857143" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39635536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1632653" sideWeight="0.5071942" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -884,7 +874,8 @@
     <MESSAGE value="Db tested for savings" />
     <MESSAGE value="Rebuild data layer with rest controllers" />
     <MESSAGE value="Graph is drawed, but without additional data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Graph is drawed, but without additional data" />
+    <MESSAGE value="Popups with brief data, modified forces, fixed bag with dataSourceid" />
+    <option name="LAST_COMMIT_MESSAGE" value="Popups with brief data, modified forces, fixed bag with dataSourceid" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -931,26 +922,17 @@
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js</url>
+          <line>53</line>
+          <option name="timeStamp" value="81" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="81" />
+      <option name="time" value="82" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.13.RELEASE/spring-web-4.3.13.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="213" column="0" lean-forward="false" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/static/file.txt" />
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/class/xmits.js" />
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/class/area.js" />
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/class/Utils.js" />
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/class/SapFactory.js" />
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/controller/App.controller.js" />
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/controller/Config.controller.js" />
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/class/ChartContainer.js" />
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/node_modules/d3/build/d3.js" />
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/bower_components/openui5-sap.ui.core/README.md" />
@@ -963,7 +945,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
@@ -975,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5481">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +970,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1010,19 +987,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/AbstractGraphObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/repository/DataSourceRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,21 +1001,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/d3/d3-force.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/d3/d3-force-gravity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="45" column="30" lean-forward="true" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/d3/d3-force.js" />
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/d3/d3-force-gravity.js" />
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/draw/objectSizes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
@@ -1064,19 +1019,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/js/bootstrap.js" />
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper.js.map">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
@@ -1095,7 +1042,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
@@ -1110,22 +1056,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="44" />
-          <folding>
-            <marker date="1513092959848" expanded="true" signature="591:965" ph="..." />
-            <marker date="1513092959848" expanded="true" signature="634:944" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/Link.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,23 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="76" column="8" lean-forward="true" selection-start-line="76" selection-start-column="8" selection-end-line="82" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="19" lean-forward="true" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1157,11 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <marker date="1512949058085" expanded="true" signature="655:660" ph="select c fro... connection" />
-            <marker date="1512949058085" expanded="true" signature="655:763" ph="select c fro... connection" />
-            <marker date="1512949058085" expanded="true" signature="655:767" ph="select c FRO... ##" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1175,7 +1087,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
+        <state relative-caret-position="651">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
@@ -1185,7 +1097,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1193,7 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1201,7 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1209,19 +1118,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="41">
           <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js">
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="69" column="22" lean-forward="false" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="215">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/LinkMessage.java">
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/jquery.dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="5" column="80339" lean-forward="false" selection-start-line="5" selection-start-column="80339" selection-end-line="5" selection-end-column="80339" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/js/datatable.js" />
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/dataTables.bootstrap4.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/jquery.dataTables.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2959">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/AbstractGraphObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -1229,18 +1177,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js">
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/LinkMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="56" column="45" lean-forward="false" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+        <state relative-caret-position="42">
+          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js">
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="51" column="20" lean-forward="true" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+        <state relative-caret-position="316">
+          <caret line="65" column="15" lean-forward="false" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="43" />
+          <folding>
+            <marker date="1513092959848" expanded="true" signature="591:965" ph="..." />
+            <marker date="1513092959848" expanded="true" signature="634:944" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/dataTables.select.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="69" column="26" lean-forward="false" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="106" column="4" lean-forward="false" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
+          <folding>
+            <element signature="e#1139#1146#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/messagesPopupControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>

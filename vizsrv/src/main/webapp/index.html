@@ -3,27 +3,62 @@
 <html>
     <header>
         <title>
-            Network diagram sample
+            Network diagram
         </title>
-        <style>
-            .links line {
-                stroke: #999;
-                stroke-opacity: 0.6;
-            }
 
-            .nodes circle {
-                stroke: #fff;
-                stroke-width: 1.5px;
-            }
-        </style>
-
+        <link href="style.css" rel="stylesheet">
         <script src="resources/jquery/jquery.js"></script>
         <script src="resources/popper/popper.js"></script>
         <link href="resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <script src="resources/bootstrap/js/bootstrap.js"></script>
         <script src="resources/d3/d3.js"></script>
+        <script src="resources/datatables/jquery.dataTables.min.js"></script>
+        <script src="resources/datatables/dataTables.bootstrap4.min.js"></script>
+        <script src="resources/datatables/dataTables.select.min.js"></script>
     </header>
     <body>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 id="modalTitle" class="modal-title">Link messages</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table id="modalTable" class="table table-sm table-bordered" cellspacing="0" width="100%">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Date/time</th>
+                                <th>Data source</th>
+                                <th>Message beginning</th>
+                                <th>Full text</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <div class="collapse" id="myCollapsible">
+                        <div id="messageText" class="card card-block">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
         <div class="container-fluid">
             <div class="row">
                 <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
@@ -53,6 +88,7 @@
 
                 <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
                     <h1 class="page-header">WeSee</h1>
+
                     <div id="svgDiv" class="panel panel-default">
                         <svg id="svg"/>
                     </div>
@@ -67,20 +103,21 @@
     <script src="dataloader.js"></script>
     <script src="inputControl.js"></script>
     <script src="graph.js"></script>
-
+    <script src="messagesPopupControl.js"></script>
     <script>
+//        $(document).ready(function() {
+//            var dataTable = $('#modalTable').DataTable({
+//                //scrollY: "30vh",
+//            });
+//            console.debug(dataTable);
+//            $('#myModal').modal({keyboard: true });
+//        } );
         dataloader.loadDataSources(function(rawDataSourceDescription)
         {
             var processedDataSourceDescription = drawUtils.getDataSourceMapping(rawDataSourceDescription);
             inputControl.setDataSources(processedDataSourceDescription);
         });
-        $('#example').popover({
-            container: 'body',
-            trigger: 'focus',
-            title: 'my title',
-            content: "my content",
-            trigger: "hover"
-        });
+
     </script>
     </body>
 </html>

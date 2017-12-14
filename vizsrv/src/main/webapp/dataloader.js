@@ -18,7 +18,6 @@ var dataloader = new function () {
             toDate: toDate
         };
         $.getJSON(restInterfaceUrl + "/connections", data, function(result){
-            console.debug(result);
             resultRecievedFunction(result);
         });
     }

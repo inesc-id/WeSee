@@ -61,11 +61,13 @@ var graph = new function () {
             .enter().append("line")
             .attr("stroke-width", function(d) { return objectSizes.getLinkWidth(d.calls); })
             .attr("title", function (link) {
-                console.debug(link);
                 return link.source + "-" + link.target;
             })
             .attr("data-content", function (link) {
                 return popupsUtils.generateLinkPopOverMessage(link, savedDsDescription.dataSourcesMap);
+            })
+            .on("dblclick",function(link){
+                messagesPopupControl.updateData(link, savedDsDescription);
             });
         $(".links line").popover({
             container: 'body',
