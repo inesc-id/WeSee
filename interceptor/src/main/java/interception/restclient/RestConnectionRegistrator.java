@@ -9,7 +9,7 @@ import java.net.InetAddress;
 import java.net.URI;
 
 public class RestConnectionRegistrator implements IConnectionRegistrator {
-    private String serverUrl;
+        private String serverUrl;
 
     public RestConnectionRegistrator(String serverUrl) {
         this.serverUrl = serverUrl;

@@ -60,13 +60,13 @@ var messagesPopupControl = new function MessagesPopupControl()
 
 
     };
-    var currentMessageNum = 1;
 
-    function addMessage(message)
+
+    function addMessage(message, index)
     {
-        var num = currentMessageNum++;
+        var num = index;
         loadedMessages[num] = message;
-        var tr = document.createElement('tr');
+        //var tr = document.createElement('tr');
         var date = new Date(parseInt(message.dateMs));
         var dateText = date.toLocaleString('en-GB');
         var dataSourceName = dataSourceDescription.dataSourcesMap[message.dataSourceId].name;
@@ -79,15 +79,17 @@ var messagesPopupControl = new function MessagesPopupControl()
     };
 
     function generateTableData() {
-        currentMessageNum = 1;
+        var currentMessageNum = 1;
         loadedMessages = {};
-        $(dataTable.rows().nodes()).remove();
+        dataTable.rows().remove();
         link.variations.forEach(function (variation) {
             dataloader.loadMessages(variation.id, dataSourceDescription.timeRange.min,
                 dataSourceDescription.timeRange.max, function (messages) {
-                    messages.forEach(addMessage);
+                    var blockIndex = currentMessageNum;
+                    currentMessageNum += messages.length;
+                    messages.forEach(function(message, index) {addMessage(message, index + blockIndex); });
                     $('#myModal').on('shown.bs.modal', function () {
-                        dataTable.columns.adjust().draw();
+                        dataTable.columns.adjust().draw(false);
                     })
                     $('#myCollapsible').collapse('hide');
                     $("#messageText")[0].innerHTML = "";
