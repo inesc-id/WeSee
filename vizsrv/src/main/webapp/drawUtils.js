@@ -22,43 +22,51 @@ var drawUtils = new function () {
         var nodes = {};
         var nodeIdIpMap = {};
         rawNodes.forEach(function (node) {
-            nodeIdIpMap[node.id] = node.ip;
-            if (nodes[node.ip] == undefined)
-            {
-                nodes[node.ip] = {
-                    ip: node.ip,
-                    variations: [],
-                    calls: 0
-                };
-            }
-            var foundNode = nodes[node.ip];
-            foundNode.calls += node.calls;
-            foundNode.variations.push({id:node.id, dataSourceId: node.dataSourceId,
-                dns: node.dns, calls: node.calls});
+            processRawNode(node, nodeIdIpMap, nodes);
         });
         return {nodeMap: nodes, nodeIdIpMap: nodeIdIpMap};
-    }
+    };
+    
+    function processRawNode(node, nodeIdIpMap, nodes) {
+        nodeIdIpMap[node.id] = node.ip;
+        if (nodes[node.ip] == undefined)
+        {
+            nodes[node.ip] = {
+                ip: node.ip,
+                variations: [],
+                calls: 0
+            };
+        }
+        var foundNode = nodes[node.ip];
+        foundNode.calls += node.calls;
+        foundNode.variations.push({id:node.id, dataSourceId: node.dataSourceId,
+            dns: node.dns, calls: node.calls});
+    };
 
     var formLinks = function (links, nodeIdIpMap) {
         var processedLinkArray = [];
         links.forEach(function (link) {
-            var linkSourceIp = nodeIdIpMap[link.sourceId];
-            var linkDestinationIp = nodeIdIpMap[link.destinationId];
-            var foundLink = processedLinkArray.find(function (existLink) {
-                return existLink.source == linkSourceIp &&
-                    existLink.target == linkDestinationIp;
-            });
-            if (foundLink == undefined)
-            {
-                foundLink = {source: linkSourceIp, target: linkDestinationIp, variations:[], calls: 0};
-                processedLinkArray.push(foundLink);
-            }
-            foundLink.variations.push({id: link.id, dataSourceId: link.dataSourceId, calls: link.messagesCount,
-                lastMessage: link.lastMessage});
-            foundLink.calls += link.messagesCount;
+            processRawLink(link, processedLinkArray, nodeIdIpMap);
         });
         return processedLinkArray;
     };
+
+    function processRawLink(link, processedLinkArray, nodeIdIpMap) {
+        var linkSourceIp = nodeIdIpMap[link.sourceId];
+        var linkDestinationIp = nodeIdIpMap[link.destinationId];
+        var foundLink = processedLinkArray.find(function (existLink) {
+            return existLink.source == linkSourceIp &&
+                existLink.target == linkDestinationIp;
+        });
+        if (foundLink == undefined)
+        {
+            foundLink = {source: linkSourceIp, target: linkDestinationIp, variations:[], calls: 0};
+            processedLinkArray.push(foundLink);
+        }
+        foundLink.variations.push({id: link.id, dataSourceId: link.dataSourceId, calls: link.messagesCount,
+            lastMessage: link.lastMessage});
+        foundLink.calls += link.messagesCount;
+    }
 
     this.getDrawData = function(linkMessages)
     {
@@ -73,4 +81,6 @@ var drawUtils = new function () {
         graphData.links = formLinks(linkMessages.links, nodeData.nodeIdIpMap);
         return graphData;
     };
+
+
 }

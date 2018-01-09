@@ -2,13 +2,45 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/Main.java" />
-    <bookmark url="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/Main.java" line="37" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="957ca1e1-6817-48c1-82db-f588bcdda0bc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/ConnectionRegistrator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/IConnectionRegistrator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/IInterfaceListener.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/ISenderBuilder.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/IInterfaceHandler.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/PacketInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/GraphOnlineData.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/graphOnline/GraphOnlineDataConvertor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/config/WebSocketConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/websocket/GraphOnlineWebSocketHandler.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/INewConnectionInterfaceListener.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/pcapHostListener/InterfaceFilter.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/vizsrv_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/vizsrv_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interceptor/src/main/java/interception/restclient/RestConnectionRegistrator.java" afterPath="$PROJECT_DIR$/interceptor/src/main/java/interception/restclient/RestConnectionRegistrator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/Main.java" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/Pcap4JHostNewConnectionListener.java" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/Pcap4JHostNewConnectionListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/Pcap4JNewConnectionInterfaceListener.java" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/Pcap4JNewConnectionInterfaceListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/test/PacketsListenerTest.java" afterPath="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/test/PacketsListenerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/pom.xml" afterPath="$PROJECT_DIR$/vizsrv/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionsLoader.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionsLoader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateSaver.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateSaver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/IRepositoryNotifier.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/IRepositoryNotifier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/NotifierRepository.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/NotifierRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/ConnectionSaver.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/ConnectionSaver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/HostSaver.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/HostSaver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/live_notificator/INewDataNotifier.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/live_notificator/INewDataNotifier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/repository/ConnectionOccurrenceRepository.java" afterPath="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/repository/ConnectionOccurrenceRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/messagesPopupControl.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/messagesPopupControl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vizsrv/src/main/webapp/style.css" afterPath="$PROJECT_DIR$/vizsrv/src/main/webapp/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/interceptor/target/" />
     <ignored path="$PROJECT_DIR$/vizsrv/target/" />
@@ -41,81 +73,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="messagesPopupControl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/messagesPopupControl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataloader.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConnectionMessagesLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="graph.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+            <state relative-caret-position="-1693">
+              <caret line="84" column="39" lean-forward="false" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HibernateSaver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateSaver.java">
+      <file leaf-file-name="popupUtils.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="441">
+              <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HibernateLoader.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateLoader.java">
+      <file leaf-file-name="GraphOnlineWebSocketHandler.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/websocket/GraphOnlineWebSocketHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotifierRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/NotifierRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HostSaver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/HostSaver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="613">
+              <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -126,30 +108,47 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Jsp File" />
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>String</find>
-      <find>interceptor</find>
-      <find>not found</find>
-      <find>dataSource</find>
-      <find>TimedStorage</find>
-      <find>$tip</find>
-      <find>.insertAfter(this.$element)</find>
-      <find>co</find>
-      <find>console</find>
-      <find>conso</find>
-      <find>vv</find>
-      <find>v</find>
-      <find>myModal</find>
+      <find>drawLink</find>
+      <find>drawNode</find>
+      <find>init</find>
+      <find>refre</find>
+      <find>in</find>
+      <find>re</find>
+      <find>globalNode</find>
+      <find>drawN</find>
+      <find>restra</find>
+      <find>ref</find>
+      <find>ticket</find>
+      <find>addAdd</find>
+      <find>addAd</find>
+      <find>Add</find>
+      <find>addAD</find>
+      <find>addA</find>
+      <find>drawLinks</find>
+      <find>add</find>
+      <find>tick</find>
+      <find>link</find>
+      <find>resta</find>
+      <find>isMu</find>
+      <find>onRi</find>
+      <find>loadDa</find>
+      <find>messages</find>
+      <find>isDataOnline</find>
+      <find>isData</find>
+      <find>loadMe</find>
+      <find>generateLink</find>
+      <find>restart</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -168,57 +167,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vizsrv/src/main/public/pub.html" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/resources/static/index.html" />
-        <option value="$PROJECT_DIR$/vizsrv/target/classes/static/index.html" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/resources/static/file.txt" />
-        <option value="$PROJECT_DIR$/interceptor/src/test/java/ConnectivityTest.java" />
-        <option value="$PROJECT_DIR$/interceptor/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/WebConfig.java" />
-        <option value="$PROJECT_DIR$/interceptor/pom.xml" />
-        <option value="$PROJECT_DIR$/vizsrv/pom.xml" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/ConnectionOccurrence.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/repository/ConnectionRepository.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/class/Utils.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/class/area.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/class/SapFactory.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/controller/Config.controller.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/class/ChartContainer.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/config/library.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/controls/filterGraphDataControl.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/controls/dataloader.jsp" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/controls/dataloader.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/Link.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/rest/GraphDataController.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/repository/ConnectionOccurrenceRepository.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.jsp" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/repository/DataSourceRepository.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/DataSource.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/DataSourcesLoader.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/AbstractGraphObject.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/LinkMessage.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/LinksAndNodes.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/filterGraphDataControl.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/draw/sizes.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/draw/objectSizes.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateLoader.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/popups.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionsLoader.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Host.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Connection.java" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/style.css" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js" />
         <option value="$PROJECT_DIR$/interceptor/src/main/java/interception/restclient/RestConnectionRegistrator.java" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/IRepositoryLoader.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/live_notificator/INewDataNotifier.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/IRepositoryNotifier.java" />
+        <option value="$PROJECT_DIR$/vizsrv/pom.xml" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/websocket/GraphOnlineController.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/config/WebSocketConfig.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/websocket/SomeInternalClass.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/websocket/SomeClass.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/graphOnline/GraphOnlineData.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/GraphOnlineData.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/InterfaceDeactivatedEvent.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/INewConnectionInterfaceListener.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/IInterfaceListerner.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/IInterfaceHandler.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/IInterfaceListener.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/SenderBuilder.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/IConnectionRegistrator.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/ConnectionRegistrator.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/ISenderBuilder.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/index.html" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/ConnectionSaver.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/test/PacketsListenerTest.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateSaver.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/NotifierRepository.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/style.css" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/HostSaver.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/graphOnline/GraphOnlineDataConvertor.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/PacketInfo.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/Pcap4JNewConnectionInterfaceListener.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/Pcap4JHostNewConnectionListener.java" />
+        <option value="$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/Main.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js" />
         <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/messagesPopupControl.js" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/repository/ConnectionOccurrenceRepository.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionsLoader.java" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js" />
+        <option value="$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/websocket/GraphOnlineWebSocketHandler.java" />
       </list>
     </option>
   </component>
@@ -238,24 +237,7 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="vizsrv" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="vizsrv" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="vizsrv" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="vizsrv" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="resources" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -268,7 +250,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="-9" />
     <option name="width" value="1372" />
     <option name="height" value="725" />
   </component>
@@ -287,8 +269,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -350,6 +334,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cli" type="462c0819:PsiDirectoryNode" />
+              <item name="input" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
+              <item name="pcap" type="462c0819:PsiDirectoryNode" />
+              <item name="pcap-interceptor" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cli" type="462c0819:PsiDirectoryNode" />
               <item name="listener" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -372,18 +367,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cli" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-              <item name="pcapHostListener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
-              <item name="pcap" type="462c0819:PsiDirectoryNode" />
-              <item name="pcap-interceptor" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -429,7 +412,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
@@ -439,8 +422,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
@@ -450,8 +433,30 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="save" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="live_notificator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
@@ -462,17 +467,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
               <item name="srv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
-              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="srv" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
@@ -491,6 +485,17 @@
               <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="srv" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -498,31 +503,14 @@
               <item name="WeSee" type="462c0819:PsiDirectoryNode" />
               <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
-              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WeSee" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WeSee" type="462c0819:PsiDirectoryNode" />
-              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vizsrv" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="draw" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -548,6 +536,13 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp" />
+      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\d3" />
+      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\resources\static" />
+      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\resources" />
+      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="wesee.vizsrv.srv" />
       <recent name="wesee.vizsrv" />
@@ -555,22 +550,15 @@
       <recent name="repository.sqlite" />
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="wesee.vizsrv.config" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\datatables" />
       <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\popper" />
       <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\bootstrap" />
       <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources" />
       <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\d3" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="wesee.vizsrv.config" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp" />
-      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\webapp\resources\d3" />
-      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\resources\static" />
-      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv\src\main\resources" />
-      <recent name="C:\Users\Sergei\Documents\Seminar WS2017\WeSee\vizsrv" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -585,8 +573,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.VizsrvApplication">
-    <configuration name="PacketsListenerTest.testNewConnection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Pcap main">
+    <configuration name="PacketsListenerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -598,8 +586,8 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.PacketsListenerTest" />
-      <option name="METHOD_NAME" value="testNewConnection" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -798,15 +786,15 @@
       <item index="2" class="java.lang.String" itemvalue="JUnit.RepositoryTest.testConnected" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.RepositoryTest.testSaved" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.RepositoryTest" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.PacketsListenerTest.testNewConnection" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.PacketsListenerTest" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.Pcap main" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.RepositoryTest.testSaved" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.RepositoryTest.testConnected" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RepositoryTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PacketsListenerTest.testNewConnection" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PacketsListenerTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.RepositoryTest.testSaved" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.RepositoryTest.testConnected" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RepositoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -839,7 +827,20 @@
       <workItem from="1513149004740" duration="23154000" />
       <workItem from="1513275401516" duration="8310000" />
       <workItem from="1513325528784" duration="7150000" />
-      <workItem from="1513546129511" duration="3933000" />
+      <workItem from="1513546129511" duration="4005000" />
+      <workItem from="1513685350459" duration="21000" />
+      <workItem from="1513847013199" duration="1418000" />
+      <workItem from="1514227394773" duration="600000" />
+      <workItem from="1515093895753" duration="600000" />
+      <workItem from="1515094997396" duration="74145000" />
+      <workItem from="1515316972947" duration="16682000" />
+      <workItem from="1515342898280" duration="39984000" />
+      <workItem from="1515405930547" duration="6563000" />
+      <workItem from="1515413961314" duration="2254000" />
+      <workItem from="1515424413755" duration="5246000" />
+      <workItem from="1515449129420" duration="603000" />
+      <workItem from="1515505039749" duration="451000" />
+      <workItem from="1515526198067" duration="3711000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild data layer with rest controllers">
       <created>1512950014365</created>
@@ -869,43 +870,50 @@
       <option name="project" value="LOCAL" />
       <updated>1513283527188</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Bug of not cleaning pop up message list">
+      <created>1513560772456</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1513560772456</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RepositoryTest - 2017.12.10 at 13h 19m 09s.xml">
-      <configuration name="RepositoryTest" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.07 at 10h 39m 09s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryTest_testConnected - 2017.12.10 at 11h 00m 27s.xml">
-      <configuration name="RepositoryTest.testConnected" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.07 at 10h 44m 27s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryTest_testConnected - 2017.12.10 at 11h 24m 26s.xml">
-      <configuration name="RepositoryTest.testConnected" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.07 at 10h 45m 33s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryTest_testConnected - 2017.12.10 at 13h 19m 58s.xml">
-      <configuration name="RepositoryTest.testConnected" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.07 at 10h 55m 58s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryTest_testSaved - 2017.12.10 at 10h 57m 06s.xml">
-      <configuration name="RepositoryTest.testSaved" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.07 at 10h 56m 59s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryTest_testSaved - 2017.12.10 at 10h 59m 51s.xml">
-      <configuration name="RepositoryTest.testSaved" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.07 at 10h 57m 42s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryTest_testSaved - 2017.12.10 at 11h 24m 56s.xml">
-      <configuration name="RepositoryTest.testSaved" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.07 at 11h 07m 41s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryTest_testSaved - 2017.12.10 at 12h 08m 34s.xml">
-      <configuration name="RepositoryTest.testSaved" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.08 at 02h 15m 06s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryTest_testSaved - 2017.12.10 at 13h 21m 29s.xml">
-      <configuration name="RepositoryTest.testSaved" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.08 at 02h 15m 42s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RepositoryTest_testSaved - 2017.12.10 at 13h 42m 57s.xml">
-      <configuration name="RepositoryTest.testSaved" configurationId="JUnit" />
+    <history-entry file="PacketsListenerTest - 2018.01.08 at 16h 22m 39s.xml">
+      <configuration name="PacketsListenerTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296193000" />
+    <option name="totallyTimeSpent" value="448543000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -918,36 +926,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28929386" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15306123" sideWeight="0.49280575" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19134396" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28929386" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22892939" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1283566" sideWeight="0.49280575" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2943072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3553531" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19134396" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28473803" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22892939" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24006444" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39635536" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32915717" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="91" y="91" width="1738" height="848" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1632653" sideWeight="0.5071942" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -966,17 +976,12 @@
     <MESSAGE value="Graph is drawed, but without additional data" />
     <MESSAGE value="Popups with brief data, modified forces, fixed bag with dataSourceid" />
     <MESSAGE value="Detailed info about messages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Detailed info about messages" />
+    <MESSAGE value="Bug of not cleaning pop up message list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug of not cleaning pop up message list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/Main.java</url>
-          <line>37</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-core/5.2.12.Final/hibernate-core-5.2.12.Final.jar!/org/hibernate/event/internal/DefaultSaveOrUpdateEventListener.class</url>
           <line>53</line>
@@ -1013,74 +1018,334 @@
           <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/rest/ConnectionRegistratorController.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/rest/GraphDataController.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <condition expression="link.id == 634" language="JAVA" />
+          <url>file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionsLoader.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="83" />
+      <option name="time" value="182" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/d3/d3-force-gravity.js" />
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/draw/objectSizes.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/pcap4j/pcap4j-core/1.7.2/pcap4j-core-1.7.2.jar!/org/pcap4j/core/BpfProgram.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="29" column="22" lean-forward="false" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="262">
+          <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/d3/d3.js">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/pcap4j/pcap4j-core/1.7.2/pcap4j-core-1.7.2.jar!/org/pcap4j/packet/Packet.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1637">
-          <caret line="9993" column="14" lean-forward="false" selection-start-line="9993" selection-start-column="14" selection-end-line="9993" selection-end-column="14" />
+        <state relative-caret-position="42">
+          <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/js/bootstrap.js" />
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper.js.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/IInterfaceHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/js/bootstrap.js">
+    <entry file="file://$PROJECT_DIR$/interceptor/src/main/java/interception/restclient/IConnectionRegistrator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="1455" column="0" lean-forward="true" selection-start-line="1455" selection-start-column="0" selection-end-line="1455" selection-end-column="0" />
+        <state relative-caret-position="84">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/pcap4j/pcap4j-core/1.7.2/pcap4j-core-1.7.2.jar!/org/pcap4j/packet/UdpPacket.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="205" column="23" lean-forward="false" selection-start-line="205" selection-start-column="23" selection-end-line="205" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/ISenderBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/pcap4j/pcap4j-core/1.7.2/pcap4j-core-1.7.2.jar!/org/pcap4j/core/PcapNetworkInterface.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interceptor/src/main/java/interception/models/connection_models/ConnectionOccurrence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/IConnectionRegistrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/pcap4j/pcap4j-core/1.7.2/pcap4j-core-1.7.2.jar!/org/pcap4j/core/PcapHandle.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="528" column="0" lean-forward="false" selection-start-line="528" selection-start-column="0" selection-end-line="528" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/rest/ConnectionRegistratorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper-utils.min.js.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/VizsrvApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/test/TimedStorageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interceptor/src/main/java/interception/models/connection_models/Host.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/EntitySaveResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Host.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/GraphOnlineData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="1250" column="22" lean-forward="false" selection-start-line="1250" selection-start-column="22" selection-end-line="1250" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="1575" column="22" lean-forward="false" selection-start-line="1575" selection-start-column="22" selection-end-line="1575" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/live_notificator/INewDataNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/saveresult/RepositorySaveResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/NotifierRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="27" column="40" lean-forward="false" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/popper/popper.js">
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/HostSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="34" column="91" lean-forward="false" selection-start-line="34" selection-start-column="91" selection-end-line="34" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/test/PacketsListenerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/PacketInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="38" lean-forward="false" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/DataSourcesLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/IRepositoryNotifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/graphOnline/GraphOnlineDataConvertor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="32" column="38" lean-forward="false" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/ConnectionRegistrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/Pcap4JHostNewConnectionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/Pcap4JNewConnectionInterfaceListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateSaver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="103" column="56" lean-forward="false" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/Link.java">
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/LinkMessage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/LinksAndNodes.java">
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="117" column="31" lean-forward="true" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="134" column="4" lean-forward="false" selection-start-line="134" selection-start-column="4" selection-end-line="134" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/ConnectionOccurrenceSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#493#494#0" expanded="false" />
+            <element signature="e#525#526#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/DataSourceSaver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/ConnectionSaver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-143">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,296 +1353,72 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Connection.java">
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/repository/ConnectionOccurrenceRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+        <state relative-caret-position="168">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionsLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/jquery.dataTables.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="5" column="80339" lean-forward="false" selection-start-line="5" selection-start-column="80339" selection-end-line="5" selection-end-column="80339" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/js/datatable.js" />
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/dataTables.bootstrap4.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/jquery.dataTables.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2959">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/LinkMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="38" lean-forward="false" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/inputControl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="65" column="15" lean-forward="false" selection-start-line="65" selection-start-column="15" selection-end-line="65" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/resources/datatables/dataTables.select.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2226">
-          <caret line="106" column="4" lean-forward="false" selection-start-line="106" selection-start-column="4" selection-end-line="106" selection-end-column="4" />
-          <folding>
-            <element signature="e#1139#1146#1" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/models/elemental/AbstractGraphObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interceptor/src/main/java/interception/restclient/RestConnectionRegistrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="33" lean-forward="false" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/Host.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="39" lean-forward="false" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/entities/ConnectionOccurrence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interceptor/src/main/java/interception/restclient/IConnectionRegistrator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="6" column="65" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interceptor/src/main/java/interception/models/ConnectionsEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interceptor/src/main/java/interception/models/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/Pcap4JHostNewConnectionListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/pcapHostListener/InterfaceFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/INewConnectionInterfaceListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/rest/ConnectionRegistratorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="32" column="85" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="85" />
+        <state relative-caret-position="190">
+          <caret line="64" column="98" lean-forward="false" selection-start-line="64" selection-start-column="98" selection-end-line="64" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/rest/GraphDataController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/repository/DataSourceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pcap/pcap-interceptor/src/main/java/example/ws/cli/listener/interfacing/Pcap4JNewConnectionInterfaceListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/IRepositoryLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/IRepositoryNotifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/hibernate/save/HostSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateSaver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/HibernateLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/repository/NotifierRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/dataloader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/drawUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-185">
-          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/graph/statistics/ConnectionMessagesLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="29" column="46" lean-forward="false" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/messagesPopupControl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="95" column="0" lean-forward="true" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
+        <state relative-caret-position="362">
+          <caret line="108" column="16" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1693">
+          <caret line="84" column="39" lean-forward="false" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/webapp/popupUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="33" column="43" lean-forward="false" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vizsrv/src/main/java/wesee/vizsrv/srv/websocket/GraphOnlineWebSocketHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="68" column="13" lean-forward="true" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -1,51 +1,43 @@
 package example.ws.cli;
 
 import example.ws.cli.input.CheckRunArgs;
-import example.ws.cli.listener.INewConnectionInterfaceListener;
+import example.ws.cli.listener.ISenderBuilder;
 import example.ws.cli.listener.Pcap4JHostNewConnectionListener;
-import interception.models.Connection;
-import interception.models.ConnectionsEntity;
-import interception.restclient.IConnectionRegistrator;
-import interception.restclient.RestConnectionRegistrator;
+import org.pcap4j.core.PcapNativeException;
 
-import java.net.ConnectException;
 import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.net.UnknownHostException;
 
 public class Main {
 
 	private static final long REFRESH_ADDRESS_TIME_MS = 100000; //100 sec
 	private static final long REFRESH_INTERFACES_TIME = 10000; //10 sec
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException, UnknownHostException, MalformedURLException {
 		CheckRunArgs.getUrl(args);
 		String serverUrl = args[0];
+		URL url = new URL(serverUrl);
+		String serverIp = InetAddress.getByName(url.getHost()).getHostAddress();
 		String listernerId = args.length > 1? args[1] : getMachineName();
-
-		IConnectionRegistrator connectionRegistrator = new RestConnectionRegistrator(serverUrl);
-		INewConnectionInterfaceListener connectionInterfaceListener =
-				new Pcap4JHostNewConnectionListener(REFRESH_INTERFACES_TIME);
+		ISenderBuilder registratorBuilder = () -> new ConnectionRegistrator(listernerId, serverUrl);
+		Pcap4JHostNewConnectionListener hostListener =
+				new Pcap4JHostNewConnectionListener(REFRESH_ADDRESS_TIME_MS, registratorBuilder, serverIp);
+		try{
+			hostListener.findNewInterfaces();
+		}
+		catch (PcapNativeException e) {
+			e.printStackTrace();
+		}
 		while(true)
 		{
-			try {
-				Connection connection = connectionInterfaceListener.waitNextConnection();
-				if (connection == null)
-					continue;
-				ConnectionsEntity entity = new ConnectionsEntity();
-				entity.sourceId = listernerId;
-				entity.connections = new Connection[]{ connection };
-				Runnable task = () -> {
-					try {
-						connectionRegistrator.registerConnections(entity);
-					} catch (ConnectException e) {
-						e.printStackTrace();
-					}
-				};
-				task.run();
-			} catch (Exception e) {
+			try
+			{
+				hostListener.findNewInterfaces();
+			} catch (PcapNativeException e) {
 				e.printStackTrace();
-				continue;
 			}
-
+			Thread.sleep(REFRESH_INTERFACES_TIME);
 		}
 	}
 

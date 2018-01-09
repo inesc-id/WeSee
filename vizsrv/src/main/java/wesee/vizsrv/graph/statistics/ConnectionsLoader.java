@@ -62,7 +62,7 @@ public class ConnectionsLoader {
             link.lastMessage =
                    ConnectionMessagesLoader.fromConnectionOccurrences(
                        connectionOccurrenceRepository.findFirstByConnectionAndTimeMsBeforeOrderByTimeMsDesc(
-                               dbConnection, toDate),
+                               dbConnection, toDate + 1), // + 1 because the boundary is exclusive
                        dbConnection.id
                    );
             linkList.add(link);

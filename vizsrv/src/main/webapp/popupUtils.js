@@ -26,10 +26,12 @@ var popupsUtils = new function () {
 
     this.generateLinkPopOverMessage = function(link, dataSourceMap)
     {
+        var hostSourceIp = link.source.ip? link.source.ip : link.source;
+        var hostTargetIp = link.target.ip? link.target.ip : link.target;
         var text =
             '<ul>' +
-            '   <li>Host 1:' + link.source + '</li>' +
-            '   <li>Host 2:' + link.target + '</li>' +
+            '   <li>Host 1:' + hostSourceIp + '</li>' +
+            '   <li>Host 2:' + hostTargetIp + '</li>' +
             '   <li>Calls:' + link.calls + '</li>' +
             '   <li>Data sources:' +
             '       <ul>' +
@@ -37,6 +39,11 @@ var popupsUtils = new function () {
 
             link.variations.map(function(variation)
             {
+                if (variation.lastMessage == null)
+                {
+                    console.debug(variation.id);
+                    console.debug(link);
+                }
                 var calledDate = new Date(variation.lastMessage.dateMs);
                 var text =
                     '<li>' + dataSourceMap[variation.dataSourceId].name +

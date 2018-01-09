@@ -8,16 +8,26 @@ var inputControl = new function () {
     var maxDateBound = 0;
     var isDtChanging = false;
     var currentPossibleTimeRange = {min: 0, max: 0};
+
+    this.getCurrentTimeRange = function()
+    {
+        return currentPossibleTimeRange;
+    }
+
     function drawOptions(dataSourceList)
     {
         dataSourceUl.empty();
+
         dataSourceList.forEach(function (dataSource) {
+            var checkedText = "";
+            if (selectedDsIds.indexOf(dataSource.id) >= 0)
+                checkedText = "checked";
         "inputControl.onCheck(" + dataSource.id + ")";
            $('<li class="list-group-item">' +
-               '<div class="form-check>' +
+               '<div class="form-check">' +
                 '<label class="form-check-label">' +
                     '<input type="checkbox" class="form-check-input" ' +
-               '        onchange="inputControl.onCheck(' + dataSource.id + ')" checked>'
+               '        onchange="inputControl.onCheck(' + dataSource.id + ')" ' + checkedText + ' >'
                     + dataSource.name +
                 '</label>' +
                '</div>' +
@@ -104,7 +114,7 @@ var inputControl = new function () {
             function(rawNodeAndLinks)
             {
                 var processedNodeAndLinks = drawUtils.getDrawData(rawNodeAndLinks);
-                graph.refresh(dsDescription, processedNodeAndLinks);
+                graph.refresh.bind(graph)(dsDescription, processedNodeAndLinks);
             }
         );
 
@@ -138,8 +148,60 @@ var inputControl = new function () {
         maxDtSlider.trigger("change");
         minDtSlider.trigger("change");
         refreshGraph();
+    };
+    this.onOnlineCheck = function () {
+        dataloader.setOnlineUpdateHandler(function (data) {
+            this.addNewDataSourcesIfExist(data.dataSources);
+            var filteredData = this.filterDataWithSelectedDataSources(data);
+            var maxTime = getMaxMessagesTime(filteredData.messages);
+            currentPossibleTimeRange.max = maxTime;
+            var processedNodeAndLinks = drawUtils.getDrawData(filteredData);
+            graph.addAdditionalLinksAndNodes(processedNodeAndLinks);
+        }, this);
+        dataloader.onOnlineCheck();
+    };
+
+    function getMaxMessagesTime(messagesArray) {
+        return messagesArray.map(function (message) { return message.dateMs })
+            .reduce(function (t1,t2) { return Math.max(t1,t2) });
     }
 
+    this.addNewDataSourcesIfExist = function (dataSources) {
+        dataSources.forEach(function (dataSource) {
+            if (!dsDescription.dataSourcesMap[dataSource.id])
+            {
+                dsDescription.dataSourcesMap[dataSource.id] = dataSource;
+            }
+        });
+        var dataSourceList = Object.values(dsDescription.dataSourcesMap);
+        drawOptions(dataSourceList);
+    };
 
+    this.filterDataWithSelectedDataSources = function(data)
+    {
+        function isFromDataSource(graphObj) {
+            if (selectedDsIds.indexOf(graphObj.dataSourceId) >= 0)
+                return true;
+            else return false;
+        }
+        var filteredData = {
+          links: [],
+          nodes: [],
+          messages: []
+        };
+        data.links.forEach(function (link) {
+            if (isFromDataSource(link))
+                filteredData.links.push(link);
+        });
+        data.nodes.forEach(function (node) {
+            if (isFromDataSource(node))
+                filteredData.nodes.push(node);
+        });
+        data.messages.forEach(function (message) {
+            if (isFromDataSource(message))
+                filteredData.messages.push(message);
+        });
+        return filteredData;
+    };
 
 }

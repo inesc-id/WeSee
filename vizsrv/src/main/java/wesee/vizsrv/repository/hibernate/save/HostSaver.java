@@ -1,5 +1,7 @@
 package wesee.vizsrv.repository.hibernate.save;
 
+import com.mysql.jdbc.exceptions.MySQLIntegrityConstraintViolationException;
+import org.springframework.dao.DataIntegrityViolationException;
 import wesee.vizsrv.repository.entities.DataSource;
 import wesee.vizsrv.repository.entities.Host;
 import wesee.vizsrv.repository.repository.HostRepository;
@@ -24,8 +26,14 @@ public class HostSaver {
             result.dns = interceptionModel.dns;
             result.dataSource = dataSource;
             result.isIpv4 = interceptionModel.version == interception.models.connection_models.Host.IpVersion.IPV4? 1:0;
-            result = repo.save(result);
-            saveStateEnum = RepositorySaveResult.SaveStateEnum.NEW;
+            try
+            {
+                result = repo.save(result);
+                saveStateEnum = RepositorySaveResult.SaveStateEnum.NEW;
+            }
+            catch (DataIntegrityViolationException e) {
+                result = repo.findFirstByIpAndDataSource(interceptionModel.ip, dataSource);
+            }
         }
         else
         {

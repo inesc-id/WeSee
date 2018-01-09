@@ -83,8 +83,8 @@ var messagesPopupControl = new function MessagesPopupControl()
         loadedMessages = {};
         dataTable.rows().remove();
         link.variations.forEach(function (variation) {
-            dataloader.loadMessages(variation.id, dataSourceDescription.timeRange.min,
-                dataSourceDescription.timeRange.max, function (messages) {
+            dataloader.loadMessages(variation.id, inputControl.getCurrentTimeRange().min,
+                inputControl.getCurrentTimeRange().max, function (messages) {
                     var blockIndex = currentMessageNum;
                     currentMessageNum += messages.length;
                     messages.forEach(function(message, index) {addMessage(message, index + blockIndex); });

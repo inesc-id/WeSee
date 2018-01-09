@@ -1,11 +1,11 @@
 package wesee.vizsrv.repository;
 
-import interception.models.ConnectionsEntity;
 import wesee.vizsrv.repository.live_notificator.INewDataNotifier;
 import wesee.vizsrv.repository.saveresult.RepositorySaveResult;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class NotifierRepository implements IRepositoryNotifier {
     private NotifierRepository()
@@ -13,18 +13,16 @@ public class NotifierRepository implements IRepositoryNotifier {
     }
 
     private static NotifierRepository singleRepository = new NotifierRepository();
-//    private IRepositoryNotifier databaseRepository = new HibernateSaver();
-    private List<INewDataNotifier> observers = new ArrayList<>();
+    private List<INewDataNotifier> observers = new CopyOnWriteArrayList<>();
 
     public static NotifierRepository getSingleRepository() {
         return singleRepository;
     }
 
     @Override
-    public RepositorySaveResult save(ConnectionsEntity connectionsEntity) {
-        RepositorySaveResult saveResult = new RepositorySaveResult();//databaseRepository.save(connectionsEntity);
-        notifyObservers(saveResult);
-        return saveResult;
+    public RepositorySaveResult notify(RepositorySaveResult repositorySaveResult) {
+        notifyObservers(repositorySaveResult);
+        return repositorySaveResult;
     }
 
     private void notifyObservers(RepositorySaveResult saveResult)
@@ -37,7 +35,7 @@ public class NotifierRepository implements IRepositoryNotifier {
                 continue;
             }
             try {
-                observer.onDataRecieved(saveResult);
+                observer.onDataReceived(saveResult);
             } catch (Exception e)
             {
                 e.printStackTrace();

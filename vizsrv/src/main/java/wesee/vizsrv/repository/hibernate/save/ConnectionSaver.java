@@ -1,5 +1,6 @@
 package wesee.vizsrv.repository.hibernate.save;
 
+import org.springframework.dao.DataIntegrityViolationException;
 import wesee.vizsrv.repository.entities.Connection;
 import wesee.vizsrv.repository.entities.DataSource;
 import wesee.vizsrv.repository.entities.Host;
@@ -26,9 +27,16 @@ public class ConnectionSaver {
             result.dataSource = dataSource;
             result.sourceHost = sourceHost;
             result.destinationHost = destinationHost;
-
-            result = repo.save(result);
-            saveStateEnum = RepositorySaveResult.SaveStateEnum.NEW;
+            try
+            {
+                result = repo.save(result);
+                saveStateEnum = RepositorySaveResult.SaveStateEnum.NEW;
+            }
+            catch (DataIntegrityViolationException e) {
+                result = repo.findFirstBySourceHostAndDestinationHostAndDataSource(sourceHost, destinationHost,
+                        dataSource);
+                e.printStackTrace();
+            }
         }
 
         return new EntitySaveResult(result, saveStateEnum);

@@ -18,6 +18,8 @@ public class ConnectionMessagesLoader {
 
     public static LinkMessage fromConnectionOccurrences(ConnectionOccurrence dbModel, Long optionalConnectionId)
     {
+        if (dbModel == null)
+            return null;
         LinkMessage linkMessage = new LinkMessage();
         linkMessage.id = dbModel.id;
         linkMessage.dataSourceId = dbModel.connection.dataSource.id;

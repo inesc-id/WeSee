@@ -4,6 +4,7 @@ import interception.models.Connection;
 import interception.models.ConnectionsEntity;
 import interception.models.connection_models.ConnectionOccurrence;
 import interception.models.connection_models.Host;
+import org.hibernate.LazyInitializationException;
 import wesee.vizsrv.repository.entities.DataSource;
 import wesee.vizsrv.repository.hibernate.save.*;
 import wesee.vizsrv.repository.repository.ConnectionOccurrenceRepository;
@@ -34,6 +35,7 @@ public class HibernateSaver{
         RepositorySaveResult saveResult = new RepositorySaveResult();
         saveResult.saveStateMap = new HashMap<>();
         saveDataSource(saveResult, connectionsEntity);
+        NotifierRepository.getSingleRepository().notify(saveResult);
         return saveResult;
     }
 
@@ -69,7 +71,15 @@ public class HibernateSaver{
         for (Host host : hosts.values()) {
             EntitySaveResult<wesee.vizsrv.repository.entities.Host> dbResult = hostSaver.findOrCreateHost(saveResult.savedEntities, host);
             saveResult.saveStateMap.put(dbResult.entityResult, dbResult.state);
-            saveResult.savedEntities.hosts.add(dbResult.entityResult);
+            try{
+                saveResult.savedEntities.hosts.add(dbResult.entityResult);
+            }
+            catch (LazyInitializationException e)
+            {
+                if (!e.getMessage().contains("wesee.vizsrv.repository.entities.DataSource.hosts"))
+                    throw e;
+            }
+
             outHostMap.put(dbResult.entityResult.ip, dbResult.entityResult);
         }
         return saveResult;
